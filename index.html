@@ -7,18 +7,20 @@
     <title>Octav's Calendar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
 <body>
     <nav>
         <div class="n1">
-            <button href="#" class="button"><--</button> 
-            <button href="#" class="button">--></button>
+            <button href="#" class="button"><i class="far fa-calendar-alt"></i></button>
+            <button href="#" class="button" id="prevMonth"><i class="fas fa-chevron-left"></i></button> 
+            <button href="#" class="button" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
             <button href="#" class="button">Today</a>
         </div>
-        <div class="n2">
-            <h1>March 2019</h1>
+        <div class="n2 thismonth">
+            <h1 id="mytitle">March 2019</h1>
         </div>
         <div class="n3">
             <button href="#" class="button">Month</a>
@@ -29,9 +31,6 @@
     </nav>
     <main>
         <ul class="weekdays">
-            <li class="weekdays-title">
-              Sunday
-            </li>
             <li class="weekdays-title">
               Monday
             </li>
@@ -49,6 +48,9 @@
             </li>
             <li class="weekdays-title">
               Saturday
+            </li>
+            <li class="weekdays-title">
+              Sunday
             </li>
           </ul>
         
@@ -90,6 +92,7 @@
             <li class="month-next">2</li>
           </ul>
     </main>
+    <script src="main.js"></script>
 </body>
 
 </html>
