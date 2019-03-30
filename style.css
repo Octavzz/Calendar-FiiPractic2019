@@ -101,6 +101,7 @@ body {
     height: 12vw;
     max-height: 185px;
     color: dimgray;
+    padding-left: 10px;
   }
   
   li.weekdays-title {
@@ -108,11 +109,8 @@ body {
     font-weight: 800;
     text-decoration: none;
   }
-  
-  ul.day-grid li:nth-child(1),
-  ul.day-grid li:nth-child(2),
-  ul.day-grid li:nth-child(3),
-  ul.day-grid li:nth-child(34),
-  ul.day-grid li:nth-child(35) {
-    background-color: #eaeaea;
+
+  .prev-month {
+    background-color: silver !important; 
   }
+  
