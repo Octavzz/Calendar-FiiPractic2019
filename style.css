@@ -95,13 +95,14 @@ body {
     justify-content: center;
   }
   
-  ul.day-grid li {
+  ul#day-grid li {
     background-color: #fff;
     border: 1px solid #eaeaea;
     height: 12vw;
     max-height: 185px;
     color: dimgray;
     padding-left: 10px;
+    border-radius: 10px;
   }
   
   li.weekdays-title {
@@ -110,7 +111,7 @@ body {
     text-decoration: none;
   }
 
-  .prev-month {
+  .not-current-month {
     background-color: silver !important; 
   }
   

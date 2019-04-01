@@ -7,7 +7,8 @@
     <title>Octav's Calendar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
 </head>
 
@@ -15,7 +16,7 @@
     <nav>
         <div class="n1">
             <button href="#" class="button"><i class="far fa-calendar-alt"></i></button>
-            <button href="#" class="button" id="prevMonth"><i class="fas fa-chevron-left"></i></button> 
+            <button href="#" class="button" id="prevMonth"><i class="fas fa-chevron-left"></i></button>
             <button href="#" class="button" id="nextMonth"><i class="fas fa-chevron-right"></i></button>
             <button href="#" class="button" id="today">Today</a>
         </div>
@@ -24,13 +25,24 @@
         </div>
         <div class="n3">
             <button href="#" class="button">Month</a>
-            <button href="#" class="button">Week</a>
-            <button href="#" class="button">Day</a>
-            <button href="#" class="button">Year</a>
+                <button href="#" class="button">Week</a>
+                    <button href="#" class="button">Day</a>
+                        <button href="#" class="button">Year</a>
         </div>
     </nav>
     <main id="calendarGrid">
-        
+        <ul class="weekdays">
+            <li class="weekdays-title"> Monday</li>
+            <li class="weekdays-title"> Tuesday</li>
+            <li class="weekdays-title"> Wednesday</li>
+            <li class="weekdays-title"> Thursday</li>
+            <li class="weekdays-title"> Friday</li>
+            <li class="weekdays-title"> Saturday</li>
+            <li class="weekdays-title"> Sunday</li>
+        </ul>
+        <ul id="day-grid">
+            
+        </ul>
     </main>
     <script src="main.js"></script>
 </body>
