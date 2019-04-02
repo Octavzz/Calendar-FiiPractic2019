@@ -79,7 +79,7 @@ prevMonthButton.addEventListener('click', () => {
   }
   title.innerText = currentMonthLiteral + ' ' + year;
   drawGrid(currentMonthNumber, year);
-  if (currentMonthNumber === today.getMonth())
+  if (currentMonthNumber === today.getMonth() && yearToJump === today.getFullYear())
     highlight();
 })
 
@@ -96,7 +96,7 @@ nextMonthButton.addEventListener('click', () => {
   }
   title.innerText = currentMonthLiteral + ' ' + year;
   drawGrid(currentMonthNumber, year);
-  if (currentMonthNumber === today.getMonth())
+  if (currentMonthNumber === today.getMonth() && yearToJump === today.getFullYear())
     highlight();
 })
 
