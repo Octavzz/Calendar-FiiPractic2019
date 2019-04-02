@@ -115,6 +115,11 @@ body {
     background-color: silver !important; 
   }
 
+  .present-day {
+    background-color: dodgerblue !important;
+    color:white !important;
+  }
+
   /* -------------------------------------------------------------- */
 
   .modal {

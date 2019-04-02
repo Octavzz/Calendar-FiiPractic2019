@@ -79,6 +79,8 @@ prevMonthButton.addEventListener('click', () => {
   }
   title.innerText = currentMonthLiteral + ' ' + year;
   drawGrid(currentMonthNumber, year);
+  if (currentMonthNumber === today.getMonth())
+    highlight();
 })
 
 nextMonthButton.addEventListener('click', () => {
@@ -94,6 +96,8 @@ nextMonthButton.addEventListener('click', () => {
   }
   title.innerText = currentMonthLiteral + ' ' + year;
   drawGrid(currentMonthNumber, year);
+  if (currentMonthNumber === today.getMonth())
+    highlight();
 })
 
 todayButton.addEventListener('click', () => {
@@ -102,12 +106,22 @@ todayButton.addEventListener('click', () => {
   year = new Date().getFullYear();
   title.innerText = currentMonthLiteral + ' ' + year;
   drawGrid(currentMonthNumber, year);
+  highlight();
 })
 
 drawGrid(currentMonthNumber, year);
 
-// Select Specific Date Modal
+function highlight() {
+  const ul = document.getElementById('day-grid');
+  let items = ul.getElementsByTagName('li');
+  for (let i = 0; i < items.length; i++) {
+    if (parseInt(items[i].innerHTML, 10) === today.getDay()) {
+      items[i].classList.add('present-day');
+    }
+  }
+}
 
+highlight();
 const modal = document.querySelector(".modal");
 const trigger = document.getElementById("selectDate");
 const closeButton = document.querySelector(".close-button");
@@ -125,6 +139,8 @@ function selectSpecificDate() {
   currentMonthLiteral = months[currentMonthNumber];
   year = yearToJump;
   title.innerText = currentMonthLiteral + ' ' + year;
+  if (monthToJump === today.getMonth() && yearToJump === today.getFullYear())
+    highlight();
 }
 
 function switchToSelectedDate() {
